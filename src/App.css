@@ -1,0 +1,35 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #f3f3f3;
+    /* light grey */
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Links inside navbar */
+.nav-link {
+    text-decoration: none;
+    color: #1f2937;
+    /* dark gray */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: #3b82f6;
+    /* blue */
+    color: white;
+}
+
+/* Optional: active link style */
+.nav-link.active {
+    background-color: #2563eb;
+    /* darker blue */
+    color: white;
+}

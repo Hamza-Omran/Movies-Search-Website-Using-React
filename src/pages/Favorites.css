@@ -1,0 +1,13 @@
+.favorites-container {
+    padding: 1rem;
+}
+
+.favorites-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.favorites-empty {
+    color: #888;
+}
