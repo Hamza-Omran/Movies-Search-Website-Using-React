@@ -1,12 +1,72 @@
-# React + Vite
+# Live Demo Link: https://hamza-omran.github.io/Movies-Search-Website-Using-React/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Movies Search Website Using React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple movie search web app built with React and Vite, using the OMDb API. Users can search for movies, view details, and save favorites (persisted in localStorage).
 
-## Expanding the ESLint configuration
+## Features
+- Search movies by title
+- View movie details
+- Add/remove favorites
+- Favorites persist across reloads
+- Responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher recommended)
+
+### Installation
+1. Clone the repository:
+	 ```sh
+	 git clone https://github.com/Hamza-Omran/Movies-Search-Website-Using-React.git
+	 cd Movies-Search-Website-Using-React
+	 ```
+2. Install dependencies:
+	 ```sh
+	 npm install
+	 ```
+3. Add your OMDb API key to `apiKey.env` (or use the default provided).
+
+### Running Locally
+```sh
+npm run dev
+```
+Open your browser at `http://localhost:5173` (or the port shown in the terminal).
+
+### Building for Production
+```sh
+npm run build
+```
+
+### Deploying
+You can deploy the `dist` folder to any static host (e.g., GitHub Pages, Netlify).
+
+## Project Structure
+```
+apiKey.env
+src/
+	components/
+		MovieCard/
+		MovieList/
+		Navbar/
+		SearchBar/
+	pages/
+		FavoritesProvider.jsx
+		Home.jsx
+		MovieDetails.jsx
+	services/
+		api.js
+		config.js
+public/
+	vite.svg
+index.html
+vite.config.js
+```
+
+## API
+- Uses [OMDb API](https://www.omdbapi.com/) for movie data.
+
+## License
+MIT
