@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import MovieDetails from "./pages/MovieDetails";
@@ -18,6 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </FavoritesProvider>
