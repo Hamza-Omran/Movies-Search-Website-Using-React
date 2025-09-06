@@ -1,4 +1,6 @@
 # Live Demo Link: https://hamza-omran.github.io/Movies-Search-Website-Using-React/
+<img width="1780" height="849" alt="image" src="https://github.com/user-attachments/assets/5e396c81-0e72-4280-8cf7-cd41743d0871" />
+
 
 
 # Movies Search Website Using React
